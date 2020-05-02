@@ -1,7 +1,7 @@
 <div class="flex fill column lista-produtos">
-
-  <h1>Ilustrações</h1>
-
+  <div class="titulo">
+    <h1>Livrarias TEC</h1>
+  </div>
   <div class="flex row produto" *ngFor="let produto of produtos">
     <img [src]="produto.urlImagem">
 
@@ -15,6 +15,10 @@
         </h2>
         <p>
           {{ produto.descricaoCurta }}
+        </p>
+        <br>
+        <p>
+          {{ produto.descricaoCompleta }}
         </p>
       </div>
 
